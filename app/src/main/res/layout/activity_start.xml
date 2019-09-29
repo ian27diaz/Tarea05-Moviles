@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.ActivityStart">
+    tools:context=".activities.ActivityStart"
+    android:background="@drawable/startbackground">
 
     <!-- TODO Add Background Image -->
 
@@ -12,6 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Prepárate los mejores platillos"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/activity_login_btn_login"
         app:layout_constraintEnd_toEndOf="@+id/activity_login_btn_register"

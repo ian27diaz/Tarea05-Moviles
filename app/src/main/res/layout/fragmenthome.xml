@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ViewAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_va_switcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityMain">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmenthome_refreshbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Refresh"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/fork"
+        android:layout_height="match_parent">
+        <com.google.android.material.textview.MaterialTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No hay recetas"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:layout_marginBottom="50dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:src="@drawable/hotdogmmmmmmmm"
+            android:id="@+id/fragmenthome_showreceta_image"
+            android:layout_width="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingTop="20dp"
+            android:layout_height="100dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmenthome_showreceta_algunosingredientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Algunos ingredientes:"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_image"
+            app:layout_constraintRight_toLeftOf="@id/fragmenthome_showreceta_fecha"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:paddingTop="15dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmenthome_showreceta_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27/sep/2019"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_image"
+            app:layout_constraintLeft_toRightOf="@id/fragmenthome_showreceta_algunosingredientes"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingTop="15dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmenthome_showreceta_ingrediente1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan de hotdog"
+            android:paddingTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_algunosingredientes"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmenthome_showreceta_ingrediente2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salchicha"
+            android:paddingTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_ingrediente1"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmenthome_showreceta_ingrediente3"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="1/2 taza tomate picado en cuadritos"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_ingrediente2"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmenthome_showreceta_ingrediente4"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="1/4 taza cebolla picado en cuadritos"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_ingrediente3"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmenthome_showreceta_ingrediente5"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="1 chile serrano en rebanadas"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_ingrediente4"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmenthome_showreceta_ingrediente6"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:text="Catsup, mayonesa con crema y mostaza"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_ingrediente5"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar a favoritos"
+            app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_ingrediente6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</ViewAnimator>

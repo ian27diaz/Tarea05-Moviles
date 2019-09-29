@@ -3,15 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/tutorialbackground"
+    android:background="@drawable/tutorialbackground3"
     android:padding="20dp">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/activity_tutorial_firstfrag_next"
+        android:id="@+id/activity_tutorial_thirdfrag_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/tutorial_previous"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_tutorial_thirdfrag_finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="@string/tutorial_next"/>
+        android:text="@string/tutorial_finish"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

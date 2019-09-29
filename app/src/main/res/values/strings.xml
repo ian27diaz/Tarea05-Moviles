@@ -3,4 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tutorial_next"> Next </string>
+    <string name="tutorial_previous"> Previous </string>
+    <string name="tutorial_finish"> Finish </string>
 </resources>
